@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="income">Enter the gross annual income
+            <img src="icon.png" class="icon" id="gross" alt="icon">
+            <br>
+            <input type="text" class="income" placeholder="Enter gross annual income"> <img src="icon.png"
+                class="innericon" id="emptyicon" alt="iconns">
+        </label>
+        <div class="box" id="grossbox">Gross annual income is your total salary in a year before any deductions
+        </div>
+        <div class="emptybox" id="incomeempty">
+            Enter the numbers only and it is should not be empty
+        </div>
+        <br>
+
+
+        <label for="extra"> Enter extra income <img src="icon.png" class="icon" id="extraincome" alt="icon">
+            <br>
+            <input type="text" class="extra" placeholder="Enter extra income from other sources">
+            <img src="icon.png" class="innericon" id="extraicon" alt="iconns">
+        </label>
+        <div class="box" id="extrabox">Extra income is the income you earn from other sources like rent, dividends,
+            etc.
+        </div>
+        <div class="emptybox" id="extraemptybox">
+            Enter the numbers only and it is should not be empty
+        </div>
+        <br>
+
+
+        <label for="age">Enter age group <img src="icon.png" class="icon" id="ageicon" alt="icon">
+            <br>
+            <input type="number" class="age" placeholder="Enter your age">
+            <img src="icon.png" class="innericon" id="ageempty" alt="iconns">
+        </label>
+        <div class="box" id="agebox">Enter your age group to calculate the tax
+        </div>
+        <div class="emptybox" id="ageemptybox">
+            Enter the numbers only and it is should not be empty
+        </div>
+        <br>
+
+
+        <label for="deduction">Enter total application deductions <img src="icon.png" class="icon" id="deductionicon"
+                alt="icon">
+            <br>
+            <input type="text" class="deduction" placeholder="Add total applicable deductions">
+            <img src="icon.png" class="innericon" id="deductionempty" alt="iconns">
+        </label>
+        <div class="box" id="deductionbox">Deductions are the expenses that you can subtract from your income to
+            calculate your taxable income. </div>
+        <div class="emptybox" id="deductionemptybox">
+            Enter the numbers only and it is should not be empty
+        </div>
+
+
+        <button type="submit" class="submit">Submit</button>
+
+    </form>
+    <div class="finalresult">
+        <div class="innerclass">
+            <p class="first">Your overall income will be </p>
+            <p class="second"></p>
+            <p class="third"></p>
+            <button class="close">Close</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
